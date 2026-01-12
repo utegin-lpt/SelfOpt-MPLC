@@ -281,7 +281,7 @@ def soc_optimize_experimental(
 
 
 # ============================================================================
-# UTILITIES - FIXED
+# UTILITIES 
 # ============================================================================
 
 def save_masks_uint8(best_mask, best_accuracy, accuracy_best_mask, 
@@ -307,3 +307,4 @@ def load_masks_uint8(filename: str) -> Tuple[np.ndarray, float]:
     accuracy = float(data['accuracy'])
     print(f"Loaded from {filename}: accuracy = {accuracy:.4f}")
     return mask, accuracy
+
